@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500&family=Lora&family=Noto+Sans:wght@200;300;400;800&family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lilita+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.heading {
+  font-size: 3.9rem;
+  margin-bottom: 1rem;
+  z-index: 999;
+  font-family: "Lilita One", cursive;
+
+  color: rgb(255, 255, 255);
+}
+.main-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  margin: 2rem 0rem;
+  position: relative;
+  background-color: black;
+}
+
+.main-header::before {
+  content: "";
+  background: linear-gradient(rgba(155, 241, 15, 0.5), rgba(255, 255, 255, 0.3)),
+    url("https://vignette.wikia.nocookie.net/rickandmorty/images/9/98/S2e3_mount_morty_and_summer.png/revision/latest?cb=20160923231412");
+  background-size: cover;
+  background-position: bottom;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  position: absolute;
+  opacity: 0.45;
+}
+.selected {
+  color: red;
+}
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+.just-gap {
+  margin: 1rem 0rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+background-color: rgb(191, 211, 228);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 0px 10px;
+  text-decoration: none;
+  position: relative;
+  margin: 0rem 0.4rem;
+}
+
+  
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.main-section {
+  display: flex;
+}
+
+.container-left {
+  flex: 2;
+  padding: 2rem 1rem;
+}
+
+.container-right {
+  flex: 9;
+}
+.max-width {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.cards {
+  cursor: pointer;
+  position: relative;
+}
+
+.card-description {
+  padding-left: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.card-image-container {
+  width: 100%;
+  height: 100%;
+}
+
+.desc {
+  color: rgba(0, 0, 0, 0.705);
+}
+
+.title {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px;
+}
+.status-color-green {
+  background-color: green;
+  color: white;
+}
+
+.status-color-red {
+  background-color: red;
+  color: white;
+}
+
+.status-color-grey {
+  background-color: rgb(92, 92, 92);
+  color: white;
+}
+
+.btn {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+form {
+  display: flex;
+  width:100%;
+}
+
+input {
+  padding: 5px 5px;
+  border: none;
+  background-color: rgb(195 230 232);
+  color: rgb(41, 41, 41);
+  outline-color: rgb(88, 88, 207);
+}
+button {
+  border: none;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.pagination a {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #6c7ac9;
+  color: #6c7ac9;
+}
+
+.pagination__link {
+  font-weight: bold;
+}
+
+.pagination__link--active a {
+  color: #fff;
+  background: #6c7ac9;
+}
+
+.pagination__link--disabled a {
+  color: rgb(198, 197, 202);
+  border: 1px solid rgb(198, 197, 202);
+}
+
+.filterByStatus {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin: 1rem 0rem;
+}
+
+.filteritems {
+  cursor: pointer;
+}
+.filter-container {
+  margin-bottom: 1rem;
+}
+
+.filteritems {
+  margin: 10px 0px;
+}
+
+.clear-filter-btn {
+  margin-top: 1rem;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  color:red
+}
+
+select{
+  width:80%;
+  padding:5px 10px;
+}
+
+
